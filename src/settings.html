@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Odoo Barcode Scanner — Settings</title>
+    <link rel="stylesheet" href="settings.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Settings</h1>
+      <p class="lead">These preferences are saved in this browser profile.</p>
+
+      <fieldset class="card">
+        <legend>After a successful scan</legend>
+        <label class="choice">
+          <input type="radio" name="afterScan" value="keep" />
+          <span>Keep the extension popup open</span>
+        </label>
+        <label class="choice">
+          <input type="radio" name="afterScan" value="close" />
+          <span>Automatically close the popup</span>
+        </label>
+      </fieldset>
+
+      <p class="repo-link">
+        Open source project:
+        <a href="https://github.com/Moundoo-Solution/odoo-barcode-scan" target="_blank" rel="noopener noreferrer">
+          github.com/Moundoo-Solution/odoo-barcode-scan
+        </a>
+      </p>
+
+      <p id="saved" class="saved" role="status" aria-live="polite"></p>
+    </main>
+    <script src="settings.js"></script>
+  </body>
+</html>

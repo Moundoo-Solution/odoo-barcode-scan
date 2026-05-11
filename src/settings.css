@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 15px;
+  color: #1a1a1a;
+  background: #f6f6f7;
+  line-height: 1.45;
+}
+main {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 28px 20px 40px;
+}
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+.lead {
+  margin: 0 0 22px;
+  color: #555;
+  font-size: 14px;
+}
+fieldset.card {
+  margin: 0;
+  padding: 16px 18px 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+legend {
+  padding: 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+.choice:first-of-type {
+  margin-top: 4px;
+}
+.choice input {
+  margin-top: 3px;
+}
+.choice span {
+  flex: 1;
+  font-size: 14px;
+}
+.saved {
+  margin: 16px 0 0;
+  min-height: 1.25em;
+  font-size: 13px;
+  color: #176;
+}
+.repo-link {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: #555;
+}
+.repo-link a {
+  color: #714b67;
+  text-decoration: none;
+}
+.repo-link a:hover {
+  text-decoration: underline;
+}
