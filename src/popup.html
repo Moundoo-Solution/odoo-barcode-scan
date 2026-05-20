@@ -19,14 +19,21 @@
           </svg>
         </button>
       </header>
-      <p class="hint">
-        Open your Odoo Barcode tab, enter a code, then click Send. Scan history is saved on this device so you can resend codes after
-        restarting the browser.
-      </p>
       <label class="field">
         <span>Code</span>
         <input id="code" type="text" autocomplete="off" spellcheck="false" placeholder="e.g. 1234567890123" />
       </label>
+      <div class="preview-block">
+        <label class="field type-field">
+          <span>Type</span>
+          <select id="barcode-type" aria-describedby="type-note"></select>
+        </label>
+        <div id="preview-panel" class="preview-panel" hidden>
+          <svg id="barcode-preview" role="img" aria-label="Preview"></svg>
+          <div id="qr-preview" class="qr-preview" hidden></div>
+        </div>
+      </div>
+      <p id="type-note" class="type-note"></p>
       <div class="row">
         <button id="send" type="button" class="primary">Send (scan)</button>
         <label class="inline"><input id="noEnter" type="checkbox" /> Do not send Enter</label>
@@ -38,6 +45,8 @@
         <button id="clear" type="button" class="ghost">Clear history</button>
       </section>
     </main>
-    <script src="popup.js" type="module"></script>
+    <script src="lib/JsBarcode.all.min.js"></script>
+    <script src="lib/qrcode.min.js"></script>
+    <script src="popup.js"></script>
   </body>
 </html>

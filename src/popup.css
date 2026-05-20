@@ -77,6 +77,63 @@ input[type="text"]:focus {
   outline: 2px solid #714b67;
   border-color: #714b67;
 }
+select {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  background: #fff;
+}
+select:focus {
+  outline: 2px solid #714b67;
+  border-color: #714b67;
+}
+.preview-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+.type-field {
+  margin: 0;
+}
+.preview-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72px;
+  padding: 8px 10px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+}
+.preview-panel[hidden] {
+  display: none;
+}
+.preview-panel svg {
+  max-width: 100%;
+  height: auto;
+}
+.qr-preview {
+  line-height: 0;
+}
+.qr-preview img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.type-note {
+  margin: 6px 0 0;
+  padding: 8px 10px;
+  font-size: 11px;
+  line-height: 1.4;
+  color: #444;
+  background: #f8f6f8;
+  border-left: 3px solid #714b67;
+  border-radius: 0 6px 6px 0;
+}
 .row {
   display: flex;
   align-items: center;

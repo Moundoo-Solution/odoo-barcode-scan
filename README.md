@@ -1,6 +1,6 @@
 # Odoo Barcode Scan Extension
 
-Chrome/Edge extension that emulates a USB barcode scanner on Odoo Barcode pages. Scan history is saved on your device (`chrome.storage.local`) so you can resend recent codes after restarting the browser; use **Clear history** in the popup when you want to wipe the list.
+Chrome/Edge extension that emulates a USB barcode scanner on Odoo Barcode pages. Choose a barcode type (Code 128, EAN-13, QR, …) to see a live preview and Odoo usage notes; invalid formats show no image. Scan history is saved on your device (`chrome.storage.local`); use **Clear history** when you want to wipe the list.
 
 GitHub repository: https://github.com/Moundoo-Solution/odoo-barcode-scan
 
