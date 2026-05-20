@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Odoo Barcode Scanner",
-  "version": "1.0.6",
-  "description": "Emulate a USB barcode scanner for Odoo Barcode. Keeps scan history for this browser session only; pick an item to resend.",
+  "version": "1.0.7",
+  "description": "Emulate a USB barcode scanner for Odoo Barcode. Keeps scan history on this device; pick an item to resend.",
   "action": {
     "default_popup": "popup.html",
     "default_title": "Odoo Barcode Scanner",

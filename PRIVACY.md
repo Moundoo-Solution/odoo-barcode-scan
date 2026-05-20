@@ -14,7 +14,7 @@ This extension does **not** collect, transmit, sell, or share personal data with
 
 The extension stores limited local data inside your browser:
 
-- **Session scan history** (`chrome.storage.session`): scanned barcode values during the current browser session only. This data is cleared when the browser is closed.
+- **Scan history** (`chrome.storage.local`): recently scanned barcode values (up to 100 items). You can clear this list from the extension popup.
 - **User preferences** (`chrome.storage.local`): extension settings such as whether the popup auto-closes after scanning.
 
 This data stays on the user's device and is not sent to external servers.
@@ -27,7 +27,7 @@ The extension does not call external APIs or remote servers.
 
 - `activeTab`: interact with the currently active tab when the user clicks the extension.
 - `scripting`: inject the content script when needed to emulate scan input.
-- `storage`: save local settings and session history.
+- `storage`: save local settings and scan history.
 - host permissions (`http://*/*`, `https://*/*`): enable operation on Odoo pages hosted on local/staging/production domains selected by the user.
 
 ## Contact

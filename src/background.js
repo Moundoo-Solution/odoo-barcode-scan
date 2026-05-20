@@ -10,10 +10,10 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
     sendResponse({ ok: false });
     return;
   }
-  chrome.storage.session.get([HISTORY_KEY], (data) => {
+  chrome.storage.local.get([HISTORY_KEY], (data) => {
     const prev = Array.isArray(data[HISTORY_KEY]) ? data[HISTORY_KEY] : [];
     const next = [code, ...prev.filter((c) => c !== code)].slice(0, MAX_ITEMS);
-    chrome.storage.session.set({ [HISTORY_KEY]: next }, () => {
+    chrome.storage.local.set({ [HISTORY_KEY]: next }, () => {
       sendResponse({ ok: true, history: next });
     });
   });

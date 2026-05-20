@@ -8,7 +8,7 @@ Odoo Barcode Scanner
 
 ## Summary (Short Description)
 
-Emulate USB barcode scanner input in Odoo and keep per-session scan history for quick re-scan.
+Emulate USB barcode scanner input in Odoo and keep local scan history for quick re-scan.
 
 ## Description (Long)
 
@@ -17,7 +17,7 @@ Odoo Barcode Scanner helps Odoo developers and testers emulate a hardware barcod
 ### What it does
 
 - Sends barcode values to the active Odoo tab as fast keyboard input (scanner-style) with optional Enter suffix.
-- Stores scan history for the current browser session so you can quickly scan the same values again.
+- Stores scan history on your device so you can quickly scan the same values again (clear anytime from the popup).
 - Provides simple settings to keep the popup open or close it after successful scans.
 
 ### Typical use cases
@@ -31,7 +31,7 @@ Odoo Barcode Scanner helps Odoo developers and testers emulate a hardware barcod
 - No analytics
 - No remote API calls
 - No data collection
-- Session history is local to your browser session and cleared when the browser closes.
+- Scan history stays on your device until you clear it from the popup.
 
 ## Category
 
@@ -45,7 +45,7 @@ This extension has a single purpose: emulate barcode scanner input for Odoo barc
 
 - `activeTab`: required to interact with the currently selected Odoo tab.
 - `scripting`: required to inject script and emulate scanner-like key events.
-- `storage`: required to store user settings and temporary session scan history.
+- `storage`: required to store user settings and local scan history.
 - host permissions (`http://*/*`, `https://*/*`): required so developers can test on localhost, staging, and production Odoo domains.
 
 ## Support URL

@@ -42,7 +42,7 @@ async function injectAndScan(text, options) {
 }
 
 function loadHistory() {
-  chrome.storage.session.get([HISTORY_KEY], (data) => {
+  chrome.storage.local.get([HISTORY_KEY], (data) => {
     const items = Array.isArray(data[HISTORY_KEY]) ? data[HISTORY_KEY] : [];
     el.list.innerHTML = "";
     for (const item of items) {
@@ -98,7 +98,7 @@ el.code.addEventListener("keydown", (ev) => {
   }
 });
 el.clear.addEventListener("click", () => {
-  chrome.storage.session.remove([HISTORY_KEY], loadHistory);
+  chrome.storage.local.remove([HISTORY_KEY], loadHistory);
 });
 
 el.openSettings.addEventListener("click", () => {
